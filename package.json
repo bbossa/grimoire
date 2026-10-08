@@ -138,6 +138,7 @@
     "vitest": "^4.1.11"
   },
   "overrides": {
-    "lodash": "^4.18.0"
+    "lodash": "^4.18.0",
+    "source-map-js": "^1.2.2"
   }
 }
