@@ -137,6 +137,7 @@
     "vitest": "^4.1.11"
   },
   "overrides": {
+    "lodash": "^4.18.0",
     "postcss-selector-parser": "6.1.5"
   }
 }
