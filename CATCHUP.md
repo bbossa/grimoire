@@ -10,7 +10,7 @@ upstream/main a de nouveaux commits. Cette PR est **une simple notification, à 
 fusionner**. Le rattrapage se fait à la main, sur un **tag de version** upstream, en suivant
 la procédure ci-dessous.
 
-Historique : v1.2.0 (PR #1), v1.3.0 (PR #2).
+Historique : v1.2.0 (PR #1), v1.3.0 (PR #2), v1.3.1 (PR #4, merge `d9e77ba`, déployé sur le NAS le 2026-11-09).
 
 ---
 
