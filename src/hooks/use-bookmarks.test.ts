@@ -875,7 +875,9 @@ describe("useBookmarks — pagination", () => {
       expect(mockedListBookmarks).toHaveBeenCalledWith(expect.objectContaining({ limit: 20, offset: 20 }))
     );
     await waitFor(() => expect(result.current.currentPage).toBe(1));
-    expect(result.current.filteredBookmarks.map((bookmark) => bookmark.id)).toEqual(["bm-valid"]);
+    await waitFor(() =>
+      expect(result.current.filteredBookmarks.map((bookmark) => bookmark.id)).toEqual(["bm-valid"])
+    );
   });
 });
 
