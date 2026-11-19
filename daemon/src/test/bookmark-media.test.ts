@@ -16,7 +16,7 @@ import {
 function imageResponse(opts: {
   url: string;
   contentType?: string;
-  body?: Uint8Array<ArrayBuffer>;
+  body?: Uint8Array<ArrayBufferLike>;
   contentLength?: string;
 }): Response {
   const headers = new Headers({
