@@ -7,7 +7,7 @@
 <br>
 
 [![Quality Gates](https://github.com/goniszewski/grimoire/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/goniszewski/grimoire/actions/workflows/quality.yml)
-![Release target](https://img.shields.io/badge/release-1.3.1-7c3aed)
+![Release target](https://img.shields.io/badge/release-1.4.0-7c3aed)
 ![Bun 1.x](https://img.shields.io/badge/Bun-1.x-black)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 
@@ -187,7 +187,7 @@ cd daemon
 
 ### Homebrew
 
-Grimoire v1.3.0 is available through Homebrew. The main Grimoire repository
+Grimoire v1.3.1 is available through Homebrew. The main Grimoire repository
 serves as the tap; the explicit URL avoids requiring a separate
 `homebrew-grimoire` repository. Install it with:
 
@@ -205,8 +205,8 @@ Use `brew upgrade grimoire` for Homebrew upgrades. Homebrew-managed data is
 kept under `$(brew --prefix)/var/little-imp`; it is separate from the native
 `~/.local/share/littleimp` directory and is not migrated automatically.
 
-The public macOS Homebrew path has passed install, service startup, reinstall,
-and uninstall checks with data preservation. Upgrading from v1.2 to v1.3 was
+The public macOS Homebrew path passed install, service startup, reinstall,
+and uninstall checks with data preservation for v1.3.0. Upgrading from v1.2 to v1.3 was
 also validated. Linux Homebrew remains unverified; use the native Linux archive
 or Docker Compose there.
 

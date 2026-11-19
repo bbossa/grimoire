@@ -235,7 +235,7 @@ describe("bookmark media cache", () => {
       imageResponse({
         url: String(input),
         contentType: "image/svg+xml",
-        body: new TextEncoder().encode("<svg xmlns=\"http://www.w3.org/2000/svg\"></svg>"),
+        body: new Uint8Array(new TextEncoder().encode("<svg xmlns=\"http://www.w3.org/2000/svg\"></svg>")),
       })
     );
 
