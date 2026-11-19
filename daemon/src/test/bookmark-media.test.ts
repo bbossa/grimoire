@@ -16,7 +16,7 @@ import {
 function imageResponse(opts: {
   url: string;
   contentType?: string;
-  body?: Uint8Array<ArrayBufferLike>;
+  body?: Uint8Array<ArrayBuffer>;
   contentLength?: string;
 }): Response {
   const headers = new Headers({
@@ -235,7 +235,7 @@ describe("bookmark media cache", () => {
       imageResponse({
         url: String(input),
         contentType: "image/svg+xml",
-        body: new TextEncoder().encode("<svg xmlns=\"http://www.w3.org/2000/svg\"></svg>"),
+        body: new Uint8Array(new TextEncoder().encode("<svg xmlns=\"http://www.w3.org/2000/svg\"></svg>")),
       })
     );
 
